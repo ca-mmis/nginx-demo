@@ -33,4 +33,5 @@ jobs:
             aws ecs update-service \
               --service nginx-demo-service \
               --force-new-deployment \
-              --region us-west-2
+              --region us-west-2 \
+              --cluster demo
