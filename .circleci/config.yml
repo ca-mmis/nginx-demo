@@ -32,4 +32,5 @@ jobs:
           command: |
             aws ecs update-service \
               --service nginx-demo-service \
-              --force-new-deployment
+              --force-new-deployment \
+              --region us-west-2
