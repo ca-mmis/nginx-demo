@@ -23,7 +23,7 @@ jobs:
           name: Push Docker image to AWS Container Registry
           command: |
             if [ "${CIRCLE_BRANCH}" == "master" ]; then
-              login="$(aws ecr get-login --no-include-email --region us-west-2)"
+              login="$(aws ecr get-login --region us-west-2)"
               ${login}
               docker push 342600918501.dkr.ecr.us-west-2.amazonaws.com/ca-mmis/nginx-demo:latest
             fi
