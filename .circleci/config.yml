@@ -1,5 +1,4 @@
 version: 2
-release-branch-workflow:
 jobs:
   build:
     working_directory: /app
