@@ -29,4 +29,4 @@ jobs:
             fi
       - deploy:
           name: Update container used by Fargate service
-          command: fargate service deploy nginx-demo-service --image 342600918501.dkr.ecr.us-west-2.amazonaws.com/ca-mmis/nginx-demo:latest
+          command: aws fargate service deploy nginx-demo-service --image 342600918501.dkr.ecr.us-west-2.amazonaws.com/ca-mmis/nginx-demo:latest
