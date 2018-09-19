@@ -30,6 +30,6 @@ jobs:
       - deploy:
           name: Update container used by Fargate service
           command: |
-            aws ecs udpate-service --service nginx-demo-service \
+            aws ecs update-service --service nginx-demo-service \
               --image 342600918501.dkr.ecr.us-west-2.amazonaws.com/ca-mmis/nginx-demo:latest \
               --force-new-deployment
